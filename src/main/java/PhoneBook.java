@@ -15,7 +15,12 @@ public class PhoneBook {
     }
 
     public String findByNumber(String phoneNum){
-        return null;
+        for (String key : phoneBook.keySet()) {
+            if (phoneNum.equals(phoneBook.get(key))) {
+                return key;
+            }
+        }
+        return "Имя не найдено";
     }
 
 }
