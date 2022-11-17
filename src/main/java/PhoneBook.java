@@ -32,7 +32,11 @@ public class PhoneBook {
     }
 
     public ArrayList<String> printAllNames() {
-        return null;
+        ArrayList<String> mas = new ArrayList<String>();
+        for (String key : phoneBook.keySet()) {
+            mas.add(key);
+        }
+        return mas;
     }
 
 }
