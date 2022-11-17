@@ -23,5 +23,9 @@ public class PhoneBook {
         return "Имя не найдено";
     }
 
+    public static String findByName(String name) {
+        return null;
+    }
+
 }
 

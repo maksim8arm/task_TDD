@@ -23,6 +23,15 @@ public class PhoneBookTest {
         Assertions.assertSame(expected, result);
     }
 
+    @Test
+    public void findByName(){
+        PhoneBook phoneBookTest = new PhoneBook();
+        phoneBookTest.add("Alex", "123-123");
+        String result =  phoneBookTest.findByName("Alex");
+        String expected = "123-123";
+        Assertions.assertSame(expected, result);
+    }
+
 
 }
 
