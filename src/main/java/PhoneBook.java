@@ -13,5 +13,10 @@ public class PhoneBook {
        System.out.println("Данное имя "+ name +" уже есть в книге");
         return false;
     }
+
+    public String findByNumber(String phoneNum){
+        return null;
+    }
+
 }
 
